@@ -1,0 +1,19 @@
+.skills {
+	.skills-list {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		li {
+			text-align: center;
+		}
+		.html {@include icon('../img/html.svg');}
+		.css {@include icon('../img/css.svg');}
+		.bootstrap {@include icon('../img/bootstrap.svg');}
+		.sass {@include icon('../img/sass.svg');}
+		.javascript {@include icon('../img/javascript.svg');}
+		.jquery {@include icon('../img/jquery.svg');}
+		.nodejs {@include icon('../img/node.svg');}
+		.express {@include icon('../img/expressjs.png');}
+		.gulp {@include icon('../img/gulp.svg');}
+	}
+}

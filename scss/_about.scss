@@ -9,8 +9,6 @@
 
         }
         ul {
-            padding: 0;
-            text-align: center;
             li {
                 margin-bottom: 20px;
             }
@@ -21,4 +19,5 @@
            background: lighten($complement, 30%);
         }
     }
+	@import '_skills.scss'
 }

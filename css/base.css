@@ -425,15 +425,90 @@ li {
       text-align: center; }
     .wrapper .about .description p, .wrapper .about .skills p {
       padding: 10px 30px 20px 40px; }
-    .wrapper .about .description ul, .wrapper .about .skills ul {
-      padding: 0;
-      text-align: center; }
-      .wrapper .about .description ul li, .wrapper .about .skills ul li {
-        margin-bottom: 20px; }
+    .wrapper .about .description ul li, .wrapper .about .skills ul li {
+      margin-bottom: 20px; }
     .wrapper .about .description hr, .wrapper .about .skills hr {
       height: 7px;
       width: 70%;
       background: #ff4d4d; }
+    .wrapper .about .skills .skills-list {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start; }
+      .wrapper .about .skills .skills-list li {
+        text-align: center; }
+      .wrapper .about .skills .skills-list .html {
+        background-image: url("../img/html.svg");
+        background-position: 35% 50%;
+        background-size: contain;
+        background-repeat: no-repeat; }
+        @media (min-width: 1024px) {
+          .wrapper .about .skills .skills-list .html {
+            background-position: 40% 50%; } }
+      .wrapper .about .skills .skills-list .css {
+        background-image: url("../img/css.svg");
+        background-position: 35% 50%;
+        background-size: contain;
+        background-repeat: no-repeat; }
+        @media (min-width: 1024px) {
+          .wrapper .about .skills .skills-list .css {
+            background-position: 40% 50%; } }
+      .wrapper .about .skills .skills-list .bootstrap {
+        background-image: url("../img/bootstrap.svg");
+        background-position: 35% 50%;
+        background-size: contain;
+        background-repeat: no-repeat; }
+        @media (min-width: 1024px) {
+          .wrapper .about .skills .skills-list .bootstrap {
+            background-position: 40% 50%; } }
+      .wrapper .about .skills .skills-list .sass {
+        background-image: url("../img/sass.svg");
+        background-position: 35% 50%;
+        background-size: contain;
+        background-repeat: no-repeat; }
+        @media (min-width: 1024px) {
+          .wrapper .about .skills .skills-list .sass {
+            background-position: 40% 50%; } }
+      .wrapper .about .skills .skills-list .javascript {
+        background-image: url("../img/javascript.svg");
+        background-position: 35% 50%;
+        background-size: contain;
+        background-repeat: no-repeat; }
+        @media (min-width: 1024px) {
+          .wrapper .about .skills .skills-list .javascript {
+            background-position: 40% 50%; } }
+      .wrapper .about .skills .skills-list .jquery {
+        background-image: url("../img/jquery.svg");
+        background-position: 35% 50%;
+        background-size: contain;
+        background-repeat: no-repeat; }
+        @media (min-width: 1024px) {
+          .wrapper .about .skills .skills-list .jquery {
+            background-position: 40% 50%; } }
+      .wrapper .about .skills .skills-list .nodejs {
+        background-image: url("../img/node.svg");
+        background-position: 35% 50%;
+        background-size: contain;
+        background-repeat: no-repeat; }
+        @media (min-width: 1024px) {
+          .wrapper .about .skills .skills-list .nodejs {
+            background-position: 40% 50%; } }
+      .wrapper .about .skills .skills-list .express {
+        background-image: url("../img/expressjs.png");
+        background-position: 35% 50%;
+        background-size: contain;
+        background-repeat: no-repeat; }
+        @media (min-width: 1024px) {
+          .wrapper .about .skills .skills-list .express {
+            background-position: 40% 50%; } }
+      .wrapper .about .skills .skills-list .gulp {
+        background-image: url("../img/gulp.svg");
+        background-position: 35% 50%;
+        background-size: contain;
+        background-repeat: no-repeat; }
+        @media (min-width: 1024px) {
+          .wrapper .about .skills .skills-list .gulp {
+            background-position: 40% 50%; } }
   .wrapper .projects h3 {
     text-align: center; }
   .wrapper .projects .project {

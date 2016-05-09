@@ -1,2 +1,12 @@
 $primary_color: #00b3b3;
 $complement: complement($primary_color);
+
+@mixin icon($url) {
+	background-image: url($url);
+	background-position: 35% 50%;
+	@media (min-width: 1024px) {
+		background-position: 40% 50%;
+	};
+	background-size: contain;
+	background-repeat: no-repeat;
+}
