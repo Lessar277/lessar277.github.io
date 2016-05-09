@@ -13,11 +13,6 @@
                 margin-bottom: 20px;
             }
         }
-        hr {
-           height: 7px;
-           width: 70%;
-           background: lighten($complement, 30%);
-        }
     }
 	@import '_skills.scss'
 }

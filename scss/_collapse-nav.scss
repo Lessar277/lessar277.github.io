@@ -3,7 +3,7 @@
     top:0;
     width: 100%;
     background: white;
-    >hr {
+	>hr {
         margin: 0;
         position: relative;
         bottom: 0;
@@ -27,9 +27,9 @@
         display: none;
         padding: 10px 0;
         text-align: center;
-        hr {
-            width: 70%;
-        }
+		hr {
+			width: 70%;
+		}
         a {
             color: $primary_color;
             text-decoration: none;

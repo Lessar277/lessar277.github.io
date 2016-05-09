@@ -372,11 +372,19 @@ li {
   font-size: 2.5em;
   display: flex;
   flex-direction: column; }
+  .wrapper .primary {
+    color: #00b3b3; }
+  .wrapper .complement {
+    color: #b30000; }
   .wrapper a.anchor {
     display: block;
     position: relative;
     bottom: 170px;
     visibility: hidden; }
+  .wrapper hr.orange {
+    height: 5px;
+    width: 70%;
+    background: #ff4d4d; }
   .wrapper .nav {
     position: fixed;
     top: 0;
@@ -427,10 +435,6 @@ li {
       padding: 10px 30px 20px 40px; }
     .wrapper .about .description ul li, .wrapper .about .skills ul li {
       margin-bottom: 20px; }
-    .wrapper .about .description hr, .wrapper .about .skills hr {
-      height: 7px;
-      width: 70%;
-      background: #ff4d4d; }
     .wrapper .about .skills .skills-list {
       display: flex;
       flex-direction: column;
@@ -516,9 +520,20 @@ li {
     padding-bottom: 30px; }
     .wrapper .projects .project img {
       max-width: 100%; }
-  .wrapper .projects hr {
-    height: 7px;
-    width: 70%;
-    background: #ff4d4d; }
+  .wrapper .contact {
+    margin-top: 100px;
+    background: #00b3b3;
+    text-align: center; }
+    .wrapper .contact ul {
+      margin-top: 50px;
+      display: flex;
+      justify-content: space-around; }
+      .wrapper .contact ul li {
+        width: 33%;
+        height: 100%; }
+      .wrapper .contact ul img {
+        width: 50%; }
+      .wrapper .contact ul .linkedin, .wrapper .contact ul .fcc {
+        border-radius: 50%; }
 
 /*# sourceMappingURL=base.css.map */

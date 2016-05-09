@@ -5,14 +5,26 @@
     font-size: 2.5em;
     display: flex;
     flex-direction: column;
+	.primary {
+		color: $primary_color;
+	}
+	.complement {
+		color: $complement;
+	}
     a.anchor {
         display: block;
         position: relative;
         bottom: 170px;
         visibility: hidden;
     }
+	hr.orange {
+       height: 5px;
+       width: 70%;
+       background: lighten($complement, 30%);
+    }
     @import '_collapse-nav.scss';
     @import '_logo.scss';
     @import '_about.scss';
     @import '_projects.scss';
+	@import '_contact.scss';
 }
