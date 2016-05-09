@@ -367,9 +367,13 @@ textarea {
 li {
   list-style: none; }
 
+body {
+  max-width: 960px;
+  margin: auto; }
+
 .wrapper {
   font-family: 'Raleway', sans-serif;
-  font-size: 2.5em;
+  font-size: 1.25em;
   display: flex;
   flex-direction: column; }
   .wrapper .primary {
@@ -379,7 +383,7 @@ li {
   .wrapper a.anchor {
     display: block;
     position: relative;
-    bottom: 170px;
+    bottom: 80px;
     visibility: hidden; }
   .wrapper hr.orange {
     height: 5px;
@@ -389,6 +393,7 @@ li {
     position: fixed;
     top: 0;
     width: 100%;
+    max-width: 960px;
     background: white; }
     .wrapper .nav > hr {
       margin: 0;
@@ -398,16 +403,32 @@ li {
       padding-left: 30px;
       display: flex;
       justify-content: space-between; }
+      @media (min-width: 568px) {
+        .wrapper .nav .nav-header {
+          height: 45px;
+          justify-content: space-between; }
+          .wrapper .nav .nav-header h3 {
+            margin: auto; } }
       .wrapper .nav .nav-header button {
-        height: 55px;
-        margin-right: 50px;
-        margin-top: 40px;
-        background: white;
+        width: 30px;
+        height: 30px;
+        background: url("../img/menu.svg");
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+        margin-right: 40px;
+        align-self: center;
         border-style: none; }
+        @media (min-width: 568px) {
+          .wrapper .nav .nav-header button {
+            margin-top: 0;
+            margin-right: 20px;
+            align-self: center; } }
       .wrapper .nav .nav-header button:focus {
         outline: 0; }
     .wrapper .nav .nav-list {
-      display: none;
+      display: flex;
+      flex-direction: column;
       padding: 10px 0;
       text-align: center; }
       .wrapper .nav .nav-list hr {
@@ -420,21 +441,41 @@ li {
           color: #00b3b3; }
         .wrapper .nav .nav-list a li {
           margin-bottom: 15px; }
+      @media (min-width: 568px) {
+        .wrapper .nav .nav-list {
+          display: flex;
+          flex-direction: row;
+          padding: 0;
+          padding-left: 30px;
+          margin: 0;
+          justify-content: center; }
+          .wrapper .nav .nav-list li {
+            margin-right: 30px; }
+          .wrapper .nav .nav-list > hr {
+            display: none; } }
+    @media (min-width: 568px) {
+      .wrapper .nav {
+        font-size: 0.7em; } }
   .wrapper .logo-wrapper {
-    margin-top: 200px;
+    margin-top: 130px;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center; }
+    .wrapper .logo-wrapper .logo {
+      max-width: 100%; }
     .wrapper .logo-wrapper h2 {
       display: none; }
   .wrapper .about {
-    margin-top: 100px; }
+    margin-top: 40px; }
     .wrapper .about .description h3, .wrapper .about .skills h3 {
       text-align: center; }
     .wrapper .about .description p, .wrapper .about .skills p {
-      padding: 10px 30px 20px 40px; }
-    .wrapper .about .description ul li, .wrapper .about .skills ul li {
-      margin-bottom: 20px; }
+      padding: 10px 20px; }
+    .wrapper .about .description ul, .wrapper .about .skills ul {
+      padding-top: 15px; }
+      .wrapper .about .description ul li, .wrapper .about .skills ul li {
+        margin-bottom: 20px; }
     .wrapper .about .skills .skills-list {
       display: flex;
       flex-direction: column;
@@ -443,91 +484,149 @@ li {
         text-align: center; }
       .wrapper .about .skills .skills-list .html {
         background-image: url("../img/html.svg");
-        background-position: 35% 50%;
+        background-position: 20% 50%;
         background-size: contain;
         background-repeat: no-repeat; }
-        @media (min-width: 1024px) {
+        @media (min-width: 480px) {
+          .wrapper .about .skills .skills-list .html {
+            background-position: 32% 50%; } }
+        @media (min-width: 720px) {
+          .wrapper .about .skills .skills-list .html {
+            background-position: 36% 50%; } }
+        @media (min-width: 980px) {
           .wrapper .about .skills .skills-list .html {
             background-position: 40% 50%; } }
       .wrapper .about .skills .skills-list .css {
         background-image: url("../img/css.svg");
-        background-position: 35% 50%;
+        background-position: 20% 50%;
         background-size: contain;
         background-repeat: no-repeat; }
-        @media (min-width: 1024px) {
+        @media (min-width: 480px) {
+          .wrapper .about .skills .skills-list .css {
+            background-position: 32% 50%; } }
+        @media (min-width: 720px) {
+          .wrapper .about .skills .skills-list .css {
+            background-position: 36% 50%; } }
+        @media (min-width: 980px) {
           .wrapper .about .skills .skills-list .css {
             background-position: 40% 50%; } }
       .wrapper .about .skills .skills-list .bootstrap {
         background-image: url("../img/bootstrap.svg");
-        background-position: 35% 50%;
+        background-position: 20% 50%;
         background-size: contain;
         background-repeat: no-repeat; }
-        @media (min-width: 1024px) {
+        @media (min-width: 480px) {
+          .wrapper .about .skills .skills-list .bootstrap {
+            background-position: 32% 50%; } }
+        @media (min-width: 720px) {
+          .wrapper .about .skills .skills-list .bootstrap {
+            background-position: 36% 50%; } }
+        @media (min-width: 980px) {
           .wrapper .about .skills .skills-list .bootstrap {
             background-position: 40% 50%; } }
       .wrapper .about .skills .skills-list .sass {
         background-image: url("../img/sass.svg");
-        background-position: 35% 50%;
+        background-position: 20% 50%;
         background-size: contain;
         background-repeat: no-repeat; }
-        @media (min-width: 1024px) {
+        @media (min-width: 480px) {
+          .wrapper .about .skills .skills-list .sass {
+            background-position: 32% 50%; } }
+        @media (min-width: 720px) {
+          .wrapper .about .skills .skills-list .sass {
+            background-position: 36% 50%; } }
+        @media (min-width: 980px) {
           .wrapper .about .skills .skills-list .sass {
             background-position: 40% 50%; } }
       .wrapper .about .skills .skills-list .javascript {
         background-image: url("../img/javascript.svg");
-        background-position: 35% 50%;
+        background-position: 20% 50%;
         background-size: contain;
         background-repeat: no-repeat; }
-        @media (min-width: 1024px) {
+        @media (min-width: 480px) {
+          .wrapper .about .skills .skills-list .javascript {
+            background-position: 32% 50%; } }
+        @media (min-width: 720px) {
+          .wrapper .about .skills .skills-list .javascript {
+            background-position: 36% 50%; } }
+        @media (min-width: 980px) {
           .wrapper .about .skills .skills-list .javascript {
             background-position: 40% 50%; } }
       .wrapper .about .skills .skills-list .jquery {
         background-image: url("../img/jquery.svg");
-        background-position: 35% 50%;
+        background-position: 20% 50%;
         background-size: contain;
         background-repeat: no-repeat; }
-        @media (min-width: 1024px) {
+        @media (min-width: 480px) {
+          .wrapper .about .skills .skills-list .jquery {
+            background-position: 32% 50%; } }
+        @media (min-width: 720px) {
+          .wrapper .about .skills .skills-list .jquery {
+            background-position: 36% 50%; } }
+        @media (min-width: 980px) {
           .wrapper .about .skills .skills-list .jquery {
             background-position: 40% 50%; } }
       .wrapper .about .skills .skills-list .nodejs {
         background-image: url("../img/node.svg");
-        background-position: 35% 50%;
+        background-position: 20% 50%;
         background-size: contain;
         background-repeat: no-repeat; }
-        @media (min-width: 1024px) {
+        @media (min-width: 480px) {
+          .wrapper .about .skills .skills-list .nodejs {
+            background-position: 32% 50%; } }
+        @media (min-width: 720px) {
+          .wrapper .about .skills .skills-list .nodejs {
+            background-position: 36% 50%; } }
+        @media (min-width: 980px) {
           .wrapper .about .skills .skills-list .nodejs {
             background-position: 40% 50%; } }
       .wrapper .about .skills .skills-list .express {
         background-image: url("../img/expressjs.png");
-        background-position: 35% 50%;
+        background-position: 20% 50%;
         background-size: contain;
         background-repeat: no-repeat; }
-        @media (min-width: 1024px) {
+        @media (min-width: 480px) {
+          .wrapper .about .skills .skills-list .express {
+            background-position: 32% 50%; } }
+        @media (min-width: 720px) {
+          .wrapper .about .skills .skills-list .express {
+            background-position: 36% 50%; } }
+        @media (min-width: 980px) {
           .wrapper .about .skills .skills-list .express {
             background-position: 40% 50%; } }
       .wrapper .about .skills .skills-list .gulp {
         background-image: url("../img/gulp.svg");
-        background-position: 35% 50%;
+        background-position: 20% 50%;
         background-size: contain;
         background-repeat: no-repeat; }
-        @media (min-width: 1024px) {
+        @media (min-width: 480px) {
+          .wrapper .about .skills .skills-list .gulp {
+            background-position: 32% 50%; } }
+        @media (min-width: 720px) {
+          .wrapper .about .skills .skills-list .gulp {
+            background-position: 36% 50%; } }
+        @media (min-width: 980px) {
           .wrapper .about .skills .skills-list .gulp {
             background-position: 40% 50%; } }
   .wrapper .projects h3 {
     text-align: center; }
   .wrapper .projects .project {
-    padding-top: 70px;
+    padding-top: 30px;
     padding-bottom: 30px; }
+    .wrapper .projects .project p {
+      padding-left: 10px; }
     .wrapper .projects .project img {
       max-width: 100%; }
   .wrapper .contact {
-    margin-top: 100px;
+    border-radius: 3% 3% 0 0;
+    margin-top: 30px;
     background: #00b3b3;
     text-align: center; }
     .wrapper .contact ul {
       margin-top: 50px;
       display: flex;
-      justify-content: space-around; }
+      justify-content: space-around;
+      padding: 0; }
       .wrapper .contact ul li {
         width: 33%;
         height: 100%; }
@@ -535,5 +634,7 @@ li {
         width: 50%; }
       .wrapper .contact ul .linkedin, .wrapper .contact ul .fcc {
         border-radius: 50%; }
+    .wrapper .contact small {
+      font-size: 0.6em; }
 
 /*# sourceMappingURL=base.css.map */

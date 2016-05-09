@@ -2,6 +2,7 @@
     position: fixed;
     top:0;
     width: 100%;
+    max-width: 960px;
     background: white;
 	>hr {
         margin: 0;
@@ -12,19 +13,37 @@
         padding-left: 30px;
         display: flex;
         justify-content: space-between;
+        @media (min-width: 568px) {
+            // padding: 0;
+            height: 45px;
+            justify-content: space-between;
+            h3 {
+                margin: auto;
+            }
+        }
         button {
-            height: 55px;
-            margin-right: 50px;
-            margin-top: 40px;
-            background: lighten(gray, 50%);
+            width: 30px;
+            height: 30px;
+            background: url("../img/menu.svg");
+            background-repeat: no-repeat;
+            background-position: top;
+            background-size: cover;
+            margin-right: 40px;
+            align-self: center;
             border-style: none;
+            @media (min-width: 568px) {
+                margin-top: 0;
+                margin-right: 20px;
+                align-self: center;
+            }
         }
         button:focus {
             outline: 0;
         }
     }
     .nav-list {
-        display: none;
+        display: flex;
+        flex-direction: column;
         padding: 10px 0;
         text-align: center;
 		hr {
@@ -41,6 +60,22 @@
                 margin-bottom: 15px;
             }
         }
-
+        @media (min-width: 568px) {
+            display: flex;
+            flex-direction: row;
+            padding: 0;
+            padding-left:30px;
+            margin: 0;
+            justify-content: center;
+            li {
+                margin-right: 30px;
+            }
+            >hr {
+                display: none;
+            }
+        }
+    }
+    @media (min-width: 568px) {
+        font-size: 0.7em;
     }
 }
