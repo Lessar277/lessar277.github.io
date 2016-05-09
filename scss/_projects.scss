@@ -1,0 +1,17 @@
+.projects {
+    h3 {
+        text-align: center;
+    }
+    .project {
+        padding-top: 70px;
+        padding-bottom: 30px;
+        img {
+            max-width: 100%;
+        }
+    }
+    hr {
+       height: 7px;
+       width: 70%;
+       background: lighten($complement, 30%);
+    }
+}

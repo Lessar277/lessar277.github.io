@@ -1,0 +1,46 @@
+.nav {
+    position: fixed;
+    top:0;
+    width: 100%;
+    background: white;
+    >hr {
+        margin: 0;
+        position: relative;
+        bottom: 0;
+    }
+    .nav-header {
+        padding-left: 30px;
+        display: flex;
+        justify-content: space-between;
+        button {
+            height: 55px;
+            margin-right: 50px;
+            margin-top: 40px;
+            background: lighten(gray, 50%);
+            border-style: none;
+        }
+        button:focus {
+            outline: 0;
+        }
+    }
+    .nav-list {
+        display: none;
+        padding: 10px 0;
+        text-align: center;
+        hr {
+            width: 70%;
+        }
+        a {
+            color: $primary_color;
+            text-decoration: none;
+            &:visited {
+                text-decoration: none;
+                color: $primary_color
+            }
+            li{
+                margin-bottom: 15px;
+            }
+        }
+
+    }
+}

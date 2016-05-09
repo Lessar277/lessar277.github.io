@@ -1,0 +1,18 @@
+@import '_normalize.scss';
+@import '_variables.scss';
+.wrapper {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5em;
+    display: flex;
+    flex-direction: column;
+    a.anchor {
+        display: block;
+        position: relative;
+        bottom: 170px;
+        visibility: hidden;
+    }
+    @import '_collapse-nav.scss';
+    @import '_logo.scss';
+    @import '_about.scss';
+    @import '_projects.scss';
+}
