@@ -1,16 +1,23 @@
 .contact {
 	border-radius: 3% 3% 0 0;
 	margin-top: 30px;
+	display: flex;
+	flex-direction: column;
 	background: $primary_color;
 	text-align: center;
 	ul {
-		margin-top: 50px;
+		margin-top: 20px;
 		display: flex;
 		justify-content: space-around;
 		padding: 0;
 		li{
 			width: 33%;
 			height: 100%;
+			a {
+				display: block;
+				height: 100%;
+				width: 100%;
+			}
 		}
 		img {
 			width: 50%;
@@ -21,5 +28,27 @@
 	}
 	small {
 		font-size: 0.6em;
+	}
+}
+
+small {
+	text-align: center;
+	background: $primary_color;
+}
+
+@media (min-width: 760px) {
+	.contact {
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		h3 {
+			margin: 0;
+			font-size: 1.7em;
+			margin-right: 30px;
+		}
+		ul {
+			padding: 20px 0;
+			margin: 0;
+		}
 	}
 }

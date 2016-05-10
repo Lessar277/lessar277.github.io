@@ -1,7 +1,7 @@
 @import '_normalize.scss';
 @import '_variables.scss';
 body {
-    max-width: 960px;
+    max-width: 1200px;
     margin: auto;
 }
 .wrapper {
@@ -24,6 +24,8 @@ body {
 	hr.orange {
        height: 5px;
        width: 70%;
+	   border: 1px solid lighten($complement, 30%);
+	   border-radius: 50%;
        background: lighten($complement, 30%);
     }
     @import '_collapse-nav.scss';
@@ -31,5 +33,7 @@ body {
     @import '_about.scss';
     @import '_projects.scss';
 	@import '_contact.scss';
-    @import '_@media640.scss';
+	// @media (min-width: 768px) {
+	// 	font-size: 0.9em;
+	// }
 }

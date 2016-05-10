@@ -1,8 +1,9 @@
+
 .nav {
     position: fixed;
     top:0;
     width: 100%;
-    max-width: 960px;
+    max-width: 1200px;
     background: white;
 	>hr {
         margin: 0;
@@ -13,14 +14,6 @@
         padding-left: 30px;
         display: flex;
         justify-content: space-between;
-        @media (min-width: 568px) {
-            // padding: 0;
-            height: 45px;
-            justify-content: space-between;
-            h3 {
-                margin: auto;
-            }
-        }
         button {
             width: 30px;
             height: 30px;
@@ -31,11 +24,6 @@
             margin-right: 40px;
             align-self: center;
             border-style: none;
-            @media (min-width: 568px) {
-                margin-top: 0;
-                margin-right: 20px;
-                align-self: center;
-            }
         }
         button:focus {
             outline: 0;
@@ -60,8 +48,25 @@
                 margin-bottom: 15px;
             }
         }
-        @media (min-width: 568px) {
-            display: flex;
+    }
+}
+
+@media (min-width: 568px) {
+	.nav {
+		font-size: 0.9em;
+		.nav-header {
+			height: 45px;
+            justify-content: space-between;
+            h3 {
+                margin: auto;
+            }
+			button {
+				margin-top: 0;
+                margin-right: 20px;
+                align-self: center;
+			}
+		}
+		.nav-list {
             flex-direction: row;
             padding: 0;
             padding-left:30px;
@@ -73,9 +78,20 @@
             >hr {
                 display: none;
             }
-        }
-    }
-    @media (min-width: 568px) {
-        font-size: 0.7em;
-    }
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.nav {
+		.nav-header {
+			margin-bottom: 10px;
+			button {
+				display: none;
+			}
+		}
+		.nav-list {
+			margin-bottom: 10px;
+		}
+	}
 }
