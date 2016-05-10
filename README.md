@@ -1,4 +1,7 @@
 # lessar277.github.io
+
+# A fully responsive portfolio website made with Flexbox
+
 Version 1.0.0
 - Template complete
 
