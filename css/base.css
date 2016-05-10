@@ -194,6 +194,8 @@ body {
         .wrapper .nav .nav-list a:visited {
           text-decoration: none;
           color: #00b3b3; }
+        .wrapper .nav .nav-list a:hover {
+          color: #004d4d; }
         .wrapper .nav .nav-list a li {
           margin-bottom: 15px; }
   @media (min-width: 568px) {

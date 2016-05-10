@@ -44,6 +44,9 @@
                 text-decoration: none;
                 color: $primary_color
             }
+            &:hover {
+                color: darken($primary_color, 20%)
+            }
             li{
                 margin-bottom: 15px;
             }
