@@ -3,10 +3,10 @@
     .description, .skills {
         h3 {
             text-align: center;
+            padding-bottom: 10px;
         }
         p {
             padding: 10px 20px;
-
         }
         ul {
             padding-top: 15px;
@@ -16,4 +16,17 @@
         }
     }
 	@import '_skills.scss'
+}
+
+@media (min-width: 768px) {
+    .about {
+        display: flex;
+    }
+    .description {
+        max-width: 50%;
+    }
+    .skills {
+        width: 50%;
+    }
+
 }

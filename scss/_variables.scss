@@ -1,5 +1,5 @@
 $primary_color: #00b3b3;
-$complement: complement($primary_color);
+$complement: lighten(complement($primary_color), 30%);
 
 @mixin icon($url) {
 	background-image: url($url);
@@ -10,9 +10,13 @@ $complement: complement($primary_color);
 	@media (min-width: 720px) {
 		background-position: 36% 50%;
 	};
-	@media (min-width: 980px) {
-		background-position: 40% 50%;
+	@media (min-width: 768px) {
+		background-position: 22% 50%;
 	};
+	@media (min-width: 960px) {
+		background-position: 32% 50%;
+	};
+
 	background-size: contain;
 	background-repeat: no-repeat;
 }

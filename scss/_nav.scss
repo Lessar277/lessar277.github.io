@@ -85,13 +85,31 @@
 @media (min-width: 768px) {
 	.nav {
 		.nav-header {
+            padding: 0;
 			margin-bottom: 10px;
-			button {
+			.toggle-nav {
 				display: none;
 			}
 		}
 		.nav-list {
 			margin-bottom: 10px;
+            .nav-skills{
+                display: none;
+            }
 		}
 	}
+}
+
+@media (min-width: 1200px) {
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid black;
+        .nav-header {
+            margin-right: auto;
+        }
+        .nav-list {
+            padding-top: 10px;
+        }
+    }
 }

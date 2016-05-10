@@ -1,4 +1,7 @@
 # lessar277.github.io
+Version 1.0.0
+- Template complete
+
 Version 0.0.3
 - multiple minor changes to layout.
 

@@ -2,14 +2,40 @@
     h3 {
         text-align: center;
     }
-    .project {
-        padding-top: 30px;
-        padding-bottom: 30px;
-        p {
-            padding-left: 10px;
+    .projects-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        .project {
+            flex-basis: 100%;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            p {
+                padding-left: 10px;
+            }
+            img {
+                max-width: 100%;
+            }
         }
-        img {
-            max-width: 100%;
+    }
+
+}
+@media (min-width: 768px) {
+    .projects {
+        .projects-wrapper {
+            justify-content: space-around;
+            .project {
+                flex-basis: 45%;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .projects {
+        .projects-wrapper {
+            .project {
+                flex-basis: 30%;
+            }
         }
     }
 }
