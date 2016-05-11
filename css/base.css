@@ -240,7 +240,7 @@ body {
       .wrapper .nav .nav-list {
         padding-top: 10px; } }
   .wrapper .logo-wrapper {
-    margin-top: 50px;
+    margin-top: 70px;
     max-width: 100%;
     display: flex;
     flex-direction: column;
@@ -249,9 +249,15 @@ body {
       max-width: 100%; }
     .wrapper .logo-wrapper h2 {
       display: none; }
+  @media (min-width: 560px) {
+    .wrapper {
+      margin-top: 10px; } }
   @media (min-width: 768px) {
     .wrapper {
-      margin-top: 80px; } }
+      margin-top: 30px; } }
+  @media (min-width: 1200px) {
+    .wrapper {
+      margin-top: 20px; } }
   .wrapper .about {
     margin-top: 40px; }
     .wrapper .about .description h3, .wrapper .about .skills h3 {
@@ -485,7 +491,7 @@ body {
       justify-content: center; }
       .wrapper .contact h3 {
         margin: 0;
-        font-size: 1.7em;
+        font-size: 1.1em;
         margin-right: 30px; }
       .wrapper .contact ul {
         padding: 20px 0;
