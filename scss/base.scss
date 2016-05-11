@@ -15,12 +15,10 @@ body {
 	.complement {
 		color: $complement;
 	}
-    a.anchor {
-        display: block;
-        position: relative;
-        bottom: 100px;
-        visibility: hidden;
-    }
+	.light {
+		color: #ddd;
+	}
+
 	hr.orange {
        height: 5px;
        width: 70%;
@@ -33,4 +31,7 @@ body {
     @import '_about.scss';
     @import '_projects.scss';
 	@import '_contact.scss';
+}
+@media (max-width) {
+
 }

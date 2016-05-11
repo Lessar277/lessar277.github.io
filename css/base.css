@@ -144,11 +144,8 @@ body {
     color: #00b3b3; }
   .wrapper .complement {
     color: #ff4d4d; }
-  .wrapper a.anchor {
-    display: block;
-    position: relative;
-    bottom: 100px;
-    visibility: hidden; }
+  .wrapper .light {
+    color: #ddd; }
   .wrapper hr.orange {
     height: 5px;
     width: 70%;
@@ -198,6 +195,14 @@ body {
           color: #004d4d; }
         .wrapper .nav .nav-list a li {
           margin-bottom: 15px; }
+  @media (max-width: 567px) {
+    .wrapper .nav-list {
+      align-items: center; }
+      .wrapper .nav-list li:not(:last-of-type) {
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 5px;
+        margin-bottom: 5px;
+        width: 60%; } }
   @media (min-width: 568px) {
     .wrapper .nav {
       font-size: 0.9em; }
@@ -215,7 +220,8 @@ body {
         padding: 0;
         padding-left: 30px;
         margin: 0;
-        justify-content: center; }
+        justify-content: center;
+        padding-bottom: 10px; }
         .wrapper .nav .nav-list li {
           margin-right: 30px; }
         .wrapper .nav .nav-list > hr {
@@ -259,6 +265,10 @@ body {
     .wrapper {
       margin-top: 20px; } }
   .wrapper .about {
+    padding-top: 60px;
+    margin-top: -60px;
+    -webkit-background-clip: content-box;
+    background-clip: content-box;
     margin-top: 40px; }
     .wrapper .about .description h3, .wrapper .about .skills h3 {
       text-align: center;
@@ -269,193 +279,217 @@ body {
       padding-top: 15px; }
       .wrapper .about .description ul li, .wrapper .about .skills ul li {
         margin-bottom: 20px; }
-    .wrapper .about .skills .skills-list {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start; }
-      .wrapper .about .skills .skills-list li {
-        text-align: center; }
-      .wrapper .about .skills .skills-list .html {
-        background-image: url("../img/html.svg");
-        background-position: 20% 50%;
-        background-size: contain;
-        background-repeat: no-repeat; }
-        @media (min-width: 480px) {
-          .wrapper .about .skills .skills-list .html {
-            background-position: 32% 50%; } }
-        @media (min-width: 720px) {
-          .wrapper .about .skills .skills-list .html {
-            background-position: 36% 50%; } }
-        @media (min-width: 768px) {
-          .wrapper .about .skills .skills-list .html {
-            background-position: 22% 50%; } }
-        @media (min-width: 960px) {
-          .wrapper .about .skills .skills-list .html {
-            background-position: 32% 50%; } }
-      .wrapper .about .skills .skills-list .css {
-        background-image: url("../img/css.svg");
-        background-position: 20% 50%;
-        background-size: contain;
-        background-repeat: no-repeat; }
-        @media (min-width: 480px) {
-          .wrapper .about .skills .skills-list .css {
-            background-position: 32% 50%; } }
-        @media (min-width: 720px) {
-          .wrapper .about .skills .skills-list .css {
-            background-position: 36% 50%; } }
-        @media (min-width: 768px) {
-          .wrapper .about .skills .skills-list .css {
-            background-position: 22% 50%; } }
-        @media (min-width: 960px) {
-          .wrapper .about .skills .skills-list .css {
-            background-position: 32% 50%; } }
-      .wrapper .about .skills .skills-list .bootstrap {
-        background-image: url("../img/bootstrap.svg");
-        background-position: 20% 50%;
-        background-size: contain;
-        background-repeat: no-repeat; }
-        @media (min-width: 480px) {
-          .wrapper .about .skills .skills-list .bootstrap {
-            background-position: 32% 50%; } }
-        @media (min-width: 720px) {
-          .wrapper .about .skills .skills-list .bootstrap {
-            background-position: 36% 50%; } }
-        @media (min-width: 768px) {
-          .wrapper .about .skills .skills-list .bootstrap {
-            background-position: 22% 50%; } }
-        @media (min-width: 960px) {
-          .wrapper .about .skills .skills-list .bootstrap {
-            background-position: 32% 50%; } }
-      .wrapper .about .skills .skills-list .sass {
-        background-image: url("../img/sass.svg");
-        background-position: 20% 50%;
-        background-size: contain;
-        background-repeat: no-repeat; }
-        @media (min-width: 480px) {
-          .wrapper .about .skills .skills-list .sass {
-            background-position: 32% 50%; } }
-        @media (min-width: 720px) {
-          .wrapper .about .skills .skills-list .sass {
-            background-position: 36% 50%; } }
-        @media (min-width: 768px) {
-          .wrapper .about .skills .skills-list .sass {
-            background-position: 22% 50%; } }
-        @media (min-width: 960px) {
-          .wrapper .about .skills .skills-list .sass {
-            background-position: 32% 50%; } }
-      .wrapper .about .skills .skills-list .javascript {
-        background-image: url("../img/javascript.svg");
-        background-position: 20% 50%;
-        background-size: contain;
-        background-repeat: no-repeat; }
-        @media (min-width: 480px) {
-          .wrapper .about .skills .skills-list .javascript {
-            background-position: 32% 50%; } }
-        @media (min-width: 720px) {
-          .wrapper .about .skills .skills-list .javascript {
-            background-position: 36% 50%; } }
-        @media (min-width: 768px) {
-          .wrapper .about .skills .skills-list .javascript {
-            background-position: 22% 50%; } }
-        @media (min-width: 960px) {
-          .wrapper .about .skills .skills-list .javascript {
-            background-position: 32% 50%; } }
-      .wrapper .about .skills .skills-list .jquery {
-        background-image: url("../img/jquery.svg");
-        background-position: 20% 50%;
-        background-size: contain;
-        background-repeat: no-repeat; }
-        @media (min-width: 480px) {
-          .wrapper .about .skills .skills-list .jquery {
-            background-position: 32% 50%; } }
-        @media (min-width: 720px) {
-          .wrapper .about .skills .skills-list .jquery {
-            background-position: 36% 50%; } }
-        @media (min-width: 768px) {
-          .wrapper .about .skills .skills-list .jquery {
-            background-position: 22% 50%; } }
-        @media (min-width: 960px) {
-          .wrapper .about .skills .skills-list .jquery {
-            background-position: 32% 50%; } }
-      .wrapper .about .skills .skills-list .nodejs {
-        background-image: url("../img/node.svg");
-        background-position: 20% 50%;
-        background-size: contain;
-        background-repeat: no-repeat; }
-        @media (min-width: 480px) {
-          .wrapper .about .skills .skills-list .nodejs {
-            background-position: 32% 50%; } }
-        @media (min-width: 720px) {
-          .wrapper .about .skills .skills-list .nodejs {
-            background-position: 36% 50%; } }
-        @media (min-width: 768px) {
-          .wrapper .about .skills .skills-list .nodejs {
-            background-position: 22% 50%; } }
-        @media (min-width: 960px) {
-          .wrapper .about .skills .skills-list .nodejs {
-            background-position: 32% 50%; } }
-      .wrapper .about .skills .skills-list .express {
-        background-image: url("../img/expressjs.png");
-        background-position: 20% 50%;
-        background-size: contain;
-        background-repeat: no-repeat; }
-        @media (min-width: 480px) {
-          .wrapper .about .skills .skills-list .express {
-            background-position: 32% 50%; } }
-        @media (min-width: 720px) {
-          .wrapper .about .skills .skills-list .express {
-            background-position: 36% 50%; } }
-        @media (min-width: 768px) {
-          .wrapper .about .skills .skills-list .express {
-            background-position: 22% 50%; } }
-        @media (min-width: 960px) {
-          .wrapper .about .skills .skills-list .express {
-            background-position: 32% 50%; } }
-      .wrapper .about .skills .skills-list .gulp {
-        background-image: url("../img/gulp.svg");
-        background-position: 20% 50%;
-        background-size: contain;
-        background-repeat: no-repeat; }
-        @media (min-width: 480px) {
-          .wrapper .about .skills .skills-list .gulp {
-            background-position: 32% 50%; } }
-        @media (min-width: 720px) {
-          .wrapper .about .skills .skills-list .gulp {
-            background-position: 36% 50%; } }
-        @media (min-width: 768px) {
-          .wrapper .about .skills .skills-list .gulp {
-            background-position: 22% 50%; } }
-        @media (min-width: 960px) {
-          .wrapper .about .skills .skills-list .gulp {
-            background-position: 32% 50%; } }
+    .wrapper .about .skills {
+      padding-top: 60px;
+      margin-top: -60px;
+      -webkit-background-clip: content-box;
+      background-clip: content-box; }
+      .wrapper .about .skills .skills-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; }
+        .wrapper .about .skills .skills-list li {
+          text-align: center; }
+        .wrapper .about .skills .skills-list .html {
+          background-image: url("../img/html.svg");
+          background-position: 20% 50%;
+          background-size: contain;
+          background-repeat: no-repeat; }
+          @media (min-width: 480px) {
+            .wrapper .about .skills .skills-list .html {
+              background-position: 32% 50%; } }
+          @media (min-width: 720px) {
+            .wrapper .about .skills .skills-list .html {
+              background-position: 36% 50%; } }
+          @media (min-width: 768px) {
+            .wrapper .about .skills .skills-list .html {
+              background-position: 22% 50%; } }
+          @media (min-width: 960px) {
+            .wrapper .about .skills .skills-list .html {
+              background-position: 32% 50%; } }
+        .wrapper .about .skills .skills-list .css {
+          background-image: url("../img/css.svg");
+          background-position: 20% 50%;
+          background-size: contain;
+          background-repeat: no-repeat; }
+          @media (min-width: 480px) {
+            .wrapper .about .skills .skills-list .css {
+              background-position: 32% 50%; } }
+          @media (min-width: 720px) {
+            .wrapper .about .skills .skills-list .css {
+              background-position: 36% 50%; } }
+          @media (min-width: 768px) {
+            .wrapper .about .skills .skills-list .css {
+              background-position: 22% 50%; } }
+          @media (min-width: 960px) {
+            .wrapper .about .skills .skills-list .css {
+              background-position: 32% 50%; } }
+        .wrapper .about .skills .skills-list .bootstrap {
+          background-image: url("../img/bootstrap.svg");
+          background-position: 20% 50%;
+          background-size: contain;
+          background-repeat: no-repeat; }
+          @media (min-width: 480px) {
+            .wrapper .about .skills .skills-list .bootstrap {
+              background-position: 32% 50%; } }
+          @media (min-width: 720px) {
+            .wrapper .about .skills .skills-list .bootstrap {
+              background-position: 36% 50%; } }
+          @media (min-width: 768px) {
+            .wrapper .about .skills .skills-list .bootstrap {
+              background-position: 22% 50%; } }
+          @media (min-width: 960px) {
+            .wrapper .about .skills .skills-list .bootstrap {
+              background-position: 32% 50%; } }
+        .wrapper .about .skills .skills-list .sass {
+          background-image: url("../img/sass.svg");
+          background-position: 20% 50%;
+          background-size: contain;
+          background-repeat: no-repeat; }
+          @media (min-width: 480px) {
+            .wrapper .about .skills .skills-list .sass {
+              background-position: 32% 50%; } }
+          @media (min-width: 720px) {
+            .wrapper .about .skills .skills-list .sass {
+              background-position: 36% 50%; } }
+          @media (min-width: 768px) {
+            .wrapper .about .skills .skills-list .sass {
+              background-position: 22% 50%; } }
+          @media (min-width: 960px) {
+            .wrapper .about .skills .skills-list .sass {
+              background-position: 32% 50%; } }
+        .wrapper .about .skills .skills-list .javascript {
+          background-image: url("../img/javascript.svg");
+          background-position: 20% 50%;
+          background-size: contain;
+          background-repeat: no-repeat; }
+          @media (min-width: 480px) {
+            .wrapper .about .skills .skills-list .javascript {
+              background-position: 32% 50%; } }
+          @media (min-width: 720px) {
+            .wrapper .about .skills .skills-list .javascript {
+              background-position: 36% 50%; } }
+          @media (min-width: 768px) {
+            .wrapper .about .skills .skills-list .javascript {
+              background-position: 22% 50%; } }
+          @media (min-width: 960px) {
+            .wrapper .about .skills .skills-list .javascript {
+              background-position: 32% 50%; } }
+        .wrapper .about .skills .skills-list .jquery {
+          background-image: url("../img/jquery.svg");
+          background-position: 20% 50%;
+          background-size: contain;
+          background-repeat: no-repeat; }
+          @media (min-width: 480px) {
+            .wrapper .about .skills .skills-list .jquery {
+              background-position: 32% 50%; } }
+          @media (min-width: 720px) {
+            .wrapper .about .skills .skills-list .jquery {
+              background-position: 36% 50%; } }
+          @media (min-width: 768px) {
+            .wrapper .about .skills .skills-list .jquery {
+              background-position: 22% 50%; } }
+          @media (min-width: 960px) {
+            .wrapper .about .skills .skills-list .jquery {
+              background-position: 32% 50%; } }
+        .wrapper .about .skills .skills-list .nodejs {
+          background-image: url("../img/node.svg");
+          background-position: 20% 50%;
+          background-size: contain;
+          background-repeat: no-repeat; }
+          @media (min-width: 480px) {
+            .wrapper .about .skills .skills-list .nodejs {
+              background-position: 32% 50%; } }
+          @media (min-width: 720px) {
+            .wrapper .about .skills .skills-list .nodejs {
+              background-position: 36% 50%; } }
+          @media (min-width: 768px) {
+            .wrapper .about .skills .skills-list .nodejs {
+              background-position: 22% 50%; } }
+          @media (min-width: 960px) {
+            .wrapper .about .skills .skills-list .nodejs {
+              background-position: 32% 50%; } }
+        .wrapper .about .skills .skills-list .express {
+          background-image: url("../img/expressjs.png");
+          background-position: 20% 50%;
+          background-size: contain;
+          background-repeat: no-repeat; }
+          @media (min-width: 480px) {
+            .wrapper .about .skills .skills-list .express {
+              background-position: 32% 50%; } }
+          @media (min-width: 720px) {
+            .wrapper .about .skills .skills-list .express {
+              background-position: 36% 50%; } }
+          @media (min-width: 768px) {
+            .wrapper .about .skills .skills-list .express {
+              background-position: 22% 50%; } }
+          @media (min-width: 960px) {
+            .wrapper .about .skills .skills-list .express {
+              background-position: 32% 50%; } }
+        .wrapper .about .skills .skills-list .gulp {
+          background-image: url("../img/gulp.svg");
+          background-position: 20% 50%;
+          background-size: contain;
+          background-repeat: no-repeat; }
+          @media (min-width: 480px) {
+            .wrapper .about .skills .skills-list .gulp {
+              background-position: 32% 50%; } }
+          @media (min-width: 720px) {
+            .wrapper .about .skills .skills-list .gulp {
+              background-position: 36% 50%; } }
+          @media (min-width: 768px) {
+            .wrapper .about .skills .skills-list .gulp {
+              background-position: 22% 50%; } }
+          @media (min-width: 960px) {
+            .wrapper .about .skills .skills-list .gulp {
+              background-position: 32% 50%; } }
   @media (min-width: 768px) {
     .wrapper .about {
+      padding-top: 80px;
+      margin-top: -80px;
+      -webkit-background-clip: content-box;
+      background-clip: content-box;
       display: flex; }
     .wrapper .description {
       max-width: 50%; }
     .wrapper .skills {
       width: 50%; } }
-  .wrapper .projects h3 {
-    text-align: center; }
-  .wrapper .projects .projects-wrapper {
-    display: flex;
-    flex-wrap: wrap; }
-    .wrapper .projects .projects-wrapper .project {
-      flex-basis: 100%;
-      padding-top: 30px;
-      padding-bottom: 30px; }
-      .wrapper .projects .projects-wrapper .project p {
-        padding-left: 10px; }
-      .wrapper .projects .projects-wrapper .project img {
-        max-width: 100%; }
-  @media (min-width: 768px) {
+  .wrapper .projects {
+    padding-top: 60px;
+    margin-top: -60px;
+    -webkit-background-clip: content-box;
+    background-clip: content-box; }
+    .wrapper .projects h3 {
+      text-align: center; }
     .wrapper .projects .projects-wrapper {
-      justify-content: space-around; }
+      display: flex;
+      flex-wrap: wrap; }
       .wrapper .projects .projects-wrapper .project {
-        flex-basis: 45%; } }
+        flex-basis: 100%;
+        padding-top: 30px;
+        padding-bottom: 30px; }
+        .wrapper .projects .projects-wrapper .project p {
+          padding-left: 10px; }
+        .wrapper .projects .projects-wrapper .project img {
+          max-width: 100%; }
+  @media (min-width: 768px) {
+    .wrapper .projects {
+      padding-top: 80px;
+      margin-top: -80px;
+      -webkit-background-clip: content-box;
+      background-clip: content-box; }
+      .wrapper .projects .projects-wrapper {
+        justify-content: space-around; }
+        .wrapper .projects .projects-wrapper .project {
+          flex-basis: 45%; } }
   @media (min-width: 1200px) {
-    .wrapper .projects .projects-wrapper .project {
-      flex-basis: 30%; } }
+    .wrapper .projects {
+      padding-top: 30px;
+      margin-top: -30px;
+      -webkit-background-clip: content-box;
+      background-clip: content-box; }
+      .wrapper .projects .projects-wrapper .project {
+        flex-basis: 30%; } }
   .wrapper .contact {
     border-radius: 3% 3% 0 0;
     margin-top: 30px;

@@ -1,4 +1,5 @@
 .skills {
+	@include linkJump(60px);
 	.skills-list {
 		display: flex;
 		flex-direction: column;

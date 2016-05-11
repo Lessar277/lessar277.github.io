@@ -1,6 +1,13 @@
 $primary_color: #00b3b3;
 $complement: lighten(complement($primary_color), 30%);
 
+@mixin linkJump ($px) {
+	padding-top: $px;
+    margin-top: (-$px);
+    -webkit-background-clip: content-box;
+    background-clip: content-box;
+}
+
 @mixin icon($url) {
 	background-image: url($url);
 	background-position: 20% 50%;

@@ -1,4 +1,5 @@
 .about {
+	@include linkJump(60px);
     margin-top: 40px;
     .description, .skills {
         h3 {
@@ -20,6 +21,7 @@
 
 @media (min-width: 768px) {
     .about {
+		@include linkJump(80px);
         display: flex;
     }
     .description {
