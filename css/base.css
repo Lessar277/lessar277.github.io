@@ -426,6 +426,40 @@ body {
           @media (min-width: 960px) {
             .wrapper .about .skills .skills-list .express {
               background-position: 32% 50%; } }
+        .wrapper .about .skills .skills-list .mysql {
+          background-image: url("../img/mysql.svg");
+          background-position: 20% 50%;
+          background-size: contain;
+          background-repeat: no-repeat; }
+          @media (min-width: 480px) {
+            .wrapper .about .skills .skills-list .mysql {
+              background-position: 32% 50%; } }
+          @media (min-width: 720px) {
+            .wrapper .about .skills .skills-list .mysql {
+              background-position: 36% 50%; } }
+          @media (min-width: 768px) {
+            .wrapper .about .skills .skills-list .mysql {
+              background-position: 22% 50%; } }
+          @media (min-width: 960px) {
+            .wrapper .about .skills .skills-list .mysql {
+              background-position: 32% 50%; } }
+        .wrapper .about .skills .skills-list .mongodb {
+          background-image: url("../img/mongodb.png");
+          background-position: 20% 50%;
+          background-size: contain;
+          background-repeat: no-repeat; }
+          @media (min-width: 480px) {
+            .wrapper .about .skills .skills-list .mongodb {
+              background-position: 32% 50%; } }
+          @media (min-width: 720px) {
+            .wrapper .about .skills .skills-list .mongodb {
+              background-position: 36% 50%; } }
+          @media (min-width: 768px) {
+            .wrapper .about .skills .skills-list .mongodb {
+              background-position: 22% 50%; } }
+          @media (min-width: 960px) {
+            .wrapper .about .skills .skills-list .mongodb {
+              background-position: 32% 50%; } }
         .wrapper .about .skills .skills-list .gulp {
           background-image: url("../img/gulp.svg");
           background-position: 20% 50%;
